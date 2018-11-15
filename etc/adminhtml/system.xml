@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="alaa_firephp">
+            <label>Fire PHP</label>
+        </tab>
+        <section id="firephp" type="text" sortOrder="100" translate="label" showInDefault="1" showInWebsite="0" showInStore="0">
+            <tab>alaa_firephp</tab>
+            <label>Setting</label>
+            <resource>Alaa_Firephp::config</resource>
+            <group id="settings" type="text" sortOrder="1" translate="label" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="enabled" translate="label" type="select" showInDefault="1" showInWebsite="0" showInStore="0" sortOrder="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="production_enabled" translate="label" type="select" showInDefault="1" showInWebsite="0" showInStore="0" sortOrder="2">
+                    <label>Enable On Production</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
