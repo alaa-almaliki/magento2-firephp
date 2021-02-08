@@ -10,6 +10,7 @@ namespace Alaa\Firephp;
 
 use Magento\Framework\App\Config\ScopeConfigInterface;
 use Magento\Framework\App\State;
+use Monolog\Handler\FirePHPHandler;
 use Monolog\LoggerFactory;
 
 /**
@@ -45,7 +46,7 @@ class Logger
     public function __construct(LoggerFactory $loggerFactory, State $appState, ScopeConfigInterface $scopeConfig)
     {
         $this->logger = $loggerFactory->create(
-            ['name' => 'FIREPHP', 'handlers' => [new \Monolog\Handler\FirePHPHandler()]]
+            ['name' => 'FIREPHP', 'handlers' => [new FirePHPHandler()]]
         );
         $this->appState = $appState;
         $this->scopeConfig = $scopeConfig;

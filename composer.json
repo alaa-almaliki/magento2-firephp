@@ -2,7 +2,6 @@
   "name": "alaa/magento2-firephp",
   "description": "Magento Fire PHP",
   "type": "magento2-module",
-  "version": "1.0.0",
   "license": "MIT",
   "keywords": ["magento2", "firephp", "magento firephp"],
   "authors": [
@@ -12,9 +11,6 @@
     }
   ],
   "require": {
-    "php": "~7.0.13|~7.1.0",
-    "magento/framework": "101.0.*",
-    "monolog/monolog": "^1.17"
   },
   "autoload": {
     "psr-4": {
