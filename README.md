@@ -14,6 +14,7 @@ and then enable the module
 **How to use**
 
 To use the module, a fire php browser plugin need to be installed
+[FirePHP](https://chrome.google.com/webstore/detail/firephp-official/ikfbpappjhegehjflebknjbhdocbgkdi/related?hl=en)
 
 ```
 consoleLog(string $message, array $context);
